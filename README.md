@@ -11,9 +11,9 @@ This information is hidden in the NinjaTrader proprietary codebase, and is unava
 
 This repository is an attempt to experiment with an approach to "unit testing" NinjaScript.
 
-While developing NinjaScript, the code is regularly run on a chart with at least one bar to run test code using the OnBarUpdate method. Please see the attached and ping me if it is not obvious what I am trying to do...
+The idea herein is to run the NinjaScript code regularly on a chart (with just one bar!) while under development, so that the OnBarUpdate method can be used to call the test code. Please see the attached and ping me if it is not obvious what I am trying to do...
 
-The approach can handle testing certain code patterns, but not others. For example, it cannot yet handle testing code that uses say objects like indicators that should be mocked. 
+At present, the approach can handle testing certain code patterns, but not others. For example, it cannot yet handle testing code that uses say objects like indicators that should be mocked. 
 
 Anyone have any ideas how to deal with this? All contributions welcome!
 
