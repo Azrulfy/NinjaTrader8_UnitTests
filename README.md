@@ -15,3 +15,5 @@ Anyone have any ideas how to deal with this? All contributions welcome!
 Thanks!
 
 Ben
+
+NB - please see also the following forum post: https://ninjatrader.com/support/forum/forum/ninjatrader-8/add-on-development/1035646-unit-testing
