@@ -11,7 +11,7 @@ This repository is an attempt to experiment with an approach to "unit testing" N
 At present, the approach can handle the testing of certain code patterns, but not of others. For example, I believe it cannot handle testing code that uses objects like say indicators that should be mocked in order to ensure repeatable unit testing. Mocking of indicators 
 would require knowledge of how to instantiate an indicator object, proprietary knowledge not available to the public.
 
-For example, see the methodWithIndicators method in the attached MyCustomStrategy.cs:
+For example, see the **methodWithIndicators** method in the attached MyCustomStrategy.cs:
 
 ```		/// <summary>
 		/// Returns true or false depending on a condition based on indicators
