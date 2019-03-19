@@ -66,7 +66,7 @@ For example, please see the two proposed, but commented-out, tests **methodWithI
 	}
 ```
 
-Typically in unit testing, objects like __SMA fast__ and __SMA slow__ would be constructed using mocking tools to ensure they exhibited whatever behaviour was required for the test. At present, I don't believe there is a means to do this with NinjaScript indicators. **Therefore, it is not possible to set up unit tests that can repeatably and reliably test all aspects of the code's intended behaviour.**  
+Typically in unit testing, objects like __SMA fast__ and __SMA slow__ would be constructed using mocking tools to ensure they exhibited whatever behaviour was required for the test. At present, I don't believe there is a means to do this with NinjaScript indicators. **Therefore, it is not possible to set up reusable unit tests that can test repeatably and reliably all aspects of the code's intended behaviour.**  
 
 Anyone have any ideas how to deal with this? All contributions welcome!
 
