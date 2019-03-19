@@ -13,7 +13,7 @@ would require knowledge of how to instantiate an indicator object, proprietary k
 
 For example, see the methodWithIndicators method in the attached MyCustomStrategy.cs:
 
-´´´		/// <summary>
+```		/// <summary>
 		/// Returns true or false depending on a condition based on indicators
 		/// </summary>
 		/// <param name="fast"></param>
@@ -25,7 +25,7 @@ For example, see the methodWithIndicators method in the attached MyCustomStrateg
 				return true;
 			}
 			return false;
-		}´´´
+		}```
 
 To test this method, it should be possible to overload the method with a a specific SMA fast and SMA slow ensuring that the method should return true, and to test that it does so. And similarly, it should be possible also to overload with a spcific SMA fast and SMA slow that ensure the method returns false, and to test that it does so. Typically in unit testing, objects like SMA fast and SMA slow would be constructed using mocking tools to ensure they exhibited whatever behaviour was required for the test. At present, I don't believe there is a means to do this with NinjaScript indicators for example.
 
