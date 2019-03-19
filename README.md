@@ -17,6 +17,7 @@ For example, see the **methodWithIndicators** method in the attached MyCustomStr
 		/// Returns true or false depending on a condition based on indicators
 		/// </summary>
 		/// <param name="fast"></param>
+		/// <param name="slow"></param>
 		/// <returns></returns>
 		private bool methodWithIndicators(SMA fast, SMA slow)
 		{
