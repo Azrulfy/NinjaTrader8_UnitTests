@@ -4,7 +4,7 @@
 
 NinjaTrader (https://ninjatrader.com/Build) is an excellent platform for coding algorithmic strategies.
 
-However, at present NinjaScript cannot be coded according to Test Driven Development methodologies ( https://en.wikipedia.org/wiki/Test-driven_development ). To unit test NinjaScript with say MSTest, knowledge of how to instantiate a Strategy or Indicator object is required. This information is hidden in the NinjaTrader proprietary codebase, and is unavailable to the public.
+However, at present NinjaScript cannot be coded according to Test Driven Development methodologies ( https://en.wikipedia.org/wiki/Test-driven_development ). To unit test NinjaScript (with say MSTest), knowledge of how to instantiate a Strategy or Indicator object is required. This information is hidden in the NinjaTrader proprietary codebase, and is unavailable to the public.
 
 **This repository is an attempt to experiment with an approach to "unit testing" NinjaScript so that better quality NinjaScript code can be written** (i.e. better quality here means better test coverage, easier to re-factor, easier to regression test, etc.). The idea is to run the NinjaScript code under development regularly on a chart with at least one bar so that the OnBarUpdate method can be used to call and run "test code". Please see the attached code samples and ping me if it is not obvious what I am trying to do...
 
