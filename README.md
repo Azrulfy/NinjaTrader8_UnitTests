@@ -1,6 +1,6 @@
 # NinjaTrader8_UnitTests
 ## Experiment to devise a means to unit test NinjaScript 
-(For more infor on NinjaScript, please see https://ninjatrader.com/support/helpGuides/nt8/en-us/ninjascript.htm)
+(For more info on NinjaScript, please see https://ninjatrader.com/support/helpGuides/nt8/en-us/ninjascript.htm)
 
 NinjaTrader (https://ninjatrader.com/Build) is an excellent platform for coding algorithmic strategies.
 
