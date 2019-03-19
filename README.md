@@ -8,7 +8,7 @@ However, at present NinjaScript cannot be coded according to Test Driven Develop
 
 This repository is an attempt to experiment with an approach to "unit testing" NinjaScript so that better quality NinjaScript code can be written (i.e. better quality here means better test coverage, easier to re-factor, easier to regression test, etc.). The idea is to run the NinjaScript code under development regularly on a chart with at least one bar so that the OnBarUpdate method can be used to call and run "test code". Please see the attached code samples and ping me if it is not obvious what I am trying to do...
 
-At present, the approach can handle the testing of certain code patterns, but not of others. For example, I believe it cannot handle testing code that uses objects like say indicators or strategies that would need to be mocked for unit testing.
+At present, the approach can handle the testing of certain code patterns, but not of others. For example, I believe it cannot handle testing code that uses objects like say indicators or strategies that should be mocked in order to ensure repeatable unit testing.
 
 Anyone have any ideas how to deal with this? All contributions welcome!
 
