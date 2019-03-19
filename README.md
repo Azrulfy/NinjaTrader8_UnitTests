@@ -31,7 +31,42 @@ For example, see the **methodWithIndicators** method in the attached MyCustomStr
 
 To test this method, it should be possible to overload the method with a specific SMA fast and SMA slow that ensure that the method should return true, and to test that it does so. And similarly, it should be possible also to overload with a specific SMA fast and SMA slow that ensure the method returns false, and to test that it does so.
 
-For example, please see the two proposed, but commented-out, tests **methodWithIndicatorsReturnsTrue()** and **methodWithIndicatorsReturnsFalse()** in the file MyCustomSTrategyUnitTest.cs. Typically in unit testing, objects like __SMA fast__ and __SMA slow__ would be constructed using mocking tools to ensure they exhibited whatever behaviour was required for the test. At present, I don't believe there is a means to do this with NinjaScript indicators. **Therefore, it is not possible to set up unit tests that can repeatably and reliably test all aspects of the code's intended behaviour.**  
+For example, please see the two proposed, but commented-out, tests **methodWithIndicatorsReturnsTrue()** and **methodWithIndicatorsReturnsFalse()** in the file MyCustomSTrategyUnitTest.cs. 
+
+```
+		/// <summary>
+		/// Unit Test
+		/// </summary>
+		private void methodWithIndicatorsReturnsTrue()
+		{
+			// to test conditions where method returns true
+			
+			// fastMock = something ...
+			// slowMock = something ...
+			
+			// bool result = this.testIndyIndyBool(this.methodWithIndicarors, fastMock, slowMock);
+
+			// assertResult(result == true);
+		}
+		
+		/// <summary>
+		/// Unit Test
+		/// </summary>
+		private void methodWithIndicatorsReturnsFalse()
+		{
+			// to test conditions where method returns false
+
+			// fastMock = something ...
+			// slowMock = something ...
+			
+			// bool result = this.testIndyIndyBool(this.methodWithIndicarors, fastMock, slowMock);
+
+			// assertResult(result != true);
+		}
+	}
+```
+
+Typically in unit testing, objects like __SMA fast__ and __SMA slow__ would be constructed using mocking tools to ensure they exhibited whatever behaviour was required for the test. At present, I don't believe there is a means to do this with NinjaScript indicators. **Therefore, it is not possible to set up unit tests that can repeatably and reliably test all aspects of the code's intended behaviour.**  
 
 Anyone have any ideas how to deal with this? All contributions welcome!
 
